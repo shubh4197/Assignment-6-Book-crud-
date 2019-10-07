@@ -28,5 +28,6 @@
       <button type="button" type="submit" class="btn btn-primary">Submit</button>
 
   </form>
-  <button type="button" type="submit" routerLink="/summary" class="btn btn-primary lol1">Payment Receipt</button>
+  <button type="button" type="submit" routerLink="/summary" disabled *ngIf="isDisabled==true" class="btn btn-primary lol1">Payment Receipt</button>
+  <button type="button" type="submit" routerLink="/summary"   *ngIf="isDisabled==false" class="btn btn-primary lol1">Payment Receipt</button>
   </div>
